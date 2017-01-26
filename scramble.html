@@ -38,6 +38,7 @@
 
             // alert("The secret word is: " + secretScramble);
             var userGuess = prompt("The secret word is: " + secretScramble + "\nGuess the secret word: ")
+            userGuess = userGuess.trim().toLowerCase();
 
             if (userGuess === secretWord){
                     alert("YEI!! You are smart!!");

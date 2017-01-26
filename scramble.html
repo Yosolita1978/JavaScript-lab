@@ -11,6 +11,12 @@
         var WORDS     = ["booger", "apple", "hackbright", "mango", "cat", "octopus", "melon"];
         var SCRAMBLED = ["oogreb", "papel", "backrhight", "goman", "tac", "copsout", "lemon"];
 
+        function scramble(input_word) {
+            // This just scrambles the first two characters
+            var first = input_word[0];
+            var second = input_word[1];
+            return second + first + input_word.slice(2);
+        }
         var playing = true;
 
      
